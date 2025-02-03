@@ -13,7 +13,7 @@
 int InitRawSocket(const char* device, bool bPromiscFlag);
 // MAC を文字列に変換する（デバッグ用途）
 char* my_ether_ntoa_r(const u_char* hwaddr, char* pbuf, socklen_t size);
-// イーサヘッドをデバッグ表示する
+// イーサヘッダをデバッグ表示する
 void PrintEtherHeader(const ether_header* eh, FILE* fp);
 
 // --------------------------------------------------------------------
@@ -138,7 +138,7 @@ char* my_ether_ntoa_r(const u_char* const hwaddr, char* const pbuf, const sockle
 
 // --------------------------------------------------------------------
 // PrintEtherHeader
-// イーサヘッドをデバッグ表示する
+// イーサヘッダをデバッグ表示する
 void PrintEtherHeader(const ether_header* const eh, FILE* const fp)
 {
 	char buf[80];
